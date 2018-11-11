@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RootPageComponent implements OnInit {
     menu =[
-	{ icon: "home", label: "Home", path: "/" }
+	{ icon: "view_quilty", label: "Home", path: "/dashboard" }
     ];
 
     constructor() { }

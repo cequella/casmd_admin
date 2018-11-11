@@ -6,7 +6,7 @@ import { RootPageComponent } from './root-page/root-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-    { path: '',          component: LoginPageComponent },
+    { path: '',            component: LoginPageComponent },
     { path: 'dashboard', component: RootPageComponent }
 ];
 
