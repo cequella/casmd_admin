@@ -2,4 +2,8 @@
 $mdc-theme-primary:   #363640; // change primary color example
 $mdc-theme-secondary: #00e595; // change secondary color example
 
-@import "~@angular-mdc/theme/material"
+@import "~@angular-mdc/theme/material";
+
+mdc-drawer {
+    top: 0;
+}
