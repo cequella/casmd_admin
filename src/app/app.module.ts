@@ -5,25 +5,27 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { AuthGuardsService } from './guards/auth-guards.service';
+import { DashboardModule } from './dashboard/dashboard.module';
+
 import { MaterialModule } from './material-module/material-module.module';
-import { LoginPageComponent } from './login-page/login-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { RootPageComponent } from './root-page/root-page.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
     declarations: [
 	AppComponent,
-	LoginPageComponent,
-	HomePageComponent,
-	RootPageComponent
+	PageNotFoundComponent,
+	LoginComponent
     ],
     imports: [
 	BrowserModule,
+	DashboardModule,
 	AppRoutingModule,
 	MaterialModule,
 	ReactiveFormsModule
     ],
-    providers: [],
+    providers: [AuthGuardsService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
